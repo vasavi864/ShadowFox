@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 40% 3%;
+    --foreground: 180 100% 90%;
+
+    --card: 220 30% 6%;
+    --card-foreground: 180 100% 90%;
+
+    --popover: 220 30% 8%;
+    --popover-foreground: 180 100% 90%;
+
+    --primary: 193 100% 50%;
+    --primary-foreground: 220 40% 3%;
+
+    --secondary: 280 100% 60%;
+    --secondary-foreground: 220 40% 3%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 180 20% 60%;
+
+    --accent: 193 100% 50%;
+    --accent-foreground: 220 40% 3%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 30% 15%;
+    --input: 220 30% 12%;
+    --ring: 193 100% 50%;
+
+    --radius: 0.75rem;
+    
+    --neon-glow: 193 100% 50%;
+    --neon-secondary: 280 100% 60%;
+    --gradient-start: 193 100% 50%;
+    --gradient-end: 280 100% 60%;
+    
+    --shadow-glow: 0 0 20px hsl(var(--neon-glow) / 0.5);
+    --shadow-glow-lg: 0 0 40px hsl(var(--neon-glow) / 0.6);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-['Space_Grotesk'] antialiased;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-['Orbitron'];
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--neon-glow) / 0.8),
+                 0 0 40px hsl(var(--neon-glow) / 0.4);
+  }
+  
+  .text-glow-secondary {
+    text-shadow: 0 0 20px hsl(var(--neon-secondary) / 0.8),
+                 0 0 40px hsl(var(--neon-secondary) / 0.4);
+  }
+  
+  .border-glow {
+    box-shadow: 0 0 20px hsl(var(--neon-glow) / 0.5),
+                inset 0 0 20px hsl(var(--neon-glow) / 0.1);
+  }
+  
+  .border-glow-hover {
+    transition: var(--transition-smooth);
+  }
+  
+  .border-glow-hover:hover {
+    box-shadow: 0 0 30px hsl(var(--neon-glow) / 0.8),
+                inset 0 0 30px hsl(var(--neon-glow) / 0.2);
+  }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--gradient-start)), hsl(var(--gradient-end)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .gradient-border {
+    position: relative;
+    background: linear-gradient(135deg, hsl(var(--gradient-start)) 0%, hsl(var(--gradient-end)) 100%);
+    padding: 2px;
+    border-radius: var(--radius);
+  }
+  
+  .gradient-border > * {
+    background: hsl(var(--card));
+    border-radius: calc(var(--radius) - 2px);
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .animate-glow-pulse {
+    animation: glow-pulse 2s ease-in-out infinite;
+  }
+  
+  @keyframes glow-pulse {
+    0%, 100% {
+      box-shadow: 0 0 20px hsl(var(--neon-glow) / 0.5);
+    }
+    50% {
+      box-shadow: 0 0 40px hsl(var(--neon-glow) / 0.8);
+    }
+  }
+}
