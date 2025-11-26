@@ -1,73 +1,89 @@
-# Welcome to your Lovable project
+# 🌐 Live Demo
 
-## Project info
+👉 **[https://craftique-vibes.vercel.app/](https://craftique-vibes.vercel.app/)**
 
-**URL**: https://lovable.dev/projects/838ef75f-2d74-4890-bf99-06bf0cd55a84
+# 📌 ShadowFox Internship – Intermediate Task
 
-## How can I edit this code?
+**Project Title:** *Craftique Vibes – Handcraft & Cultural Snacks E-Commerce Website*
+**Domain:** Web Development
+**Intern:** *Madasu Vasavi*
+**Role:** Web Developer Intern
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🧩 Project Overview
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/838ef75f-2d74-4890-bf99-06bf0cd55a84) and start prompting.
+This project was created as part of the **ShadowFox Web Development Internship – Intermediate Task**. The goal was to develop a responsive and visually appealing e-commerce-style website featuring **handcrafted products and traditional snack items**.
 
-Changes made via Lovable will be committed automatically to this repo.
+The project highlights essential frontend development skills, UI/UX structuring, and deployment workflow.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🎯 Task Objectives
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+* Build a clean and modern user interface for an e-commerce theme.
+* Display handcrafted products and cultural snacks.
+* Ensure mobile–tablet–desktop responsiveness.
+* Maintain readable structure with smooth navigation.
+* Deploy using **Vercel**.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🛠️ Tech Stack
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+* **HTML5**
+* **CSS / TailwindCSS**
+* **JavaScript**
+* **Lovable AI Builder**
+* **Git & GitHub**
+* **Vercel Deployment**
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 📂 Project Structure
+
+```
+craftique-vibes/
+│── public/
+│── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   ├── styles/
+│── package.json
+│── README.md
+│── index.html
+```
+
+---
+
+## ✨ Key Features
+
+* ✔️ Clean and modern UI design
+* ✔️ Product listing grid
+* ✔️ Fully responsive layout
+* ✔️ Smooth scroll navigation
+* ✔️ Aesthetic minimal theme
+
+---
+
+## 🚀 Running the Project Locally
+
+```
+github.com/vasavi864/ShadowFox/edit/main/Intermediate_Task
+cd craftique-vibes
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🧠 Learning Outcomes
 
-**Use GitHub Codespaces**
+* Improved frontend and UI/UX design skills
+* Better understanding of TailwindCSS
+* Component-based structuring practice
+* Experience deploying websites using Vercel
+* Hands-on exposure to building responsive e-commerce layouts
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/838ef75f-2d74-4890-bf99-06bf0cd55a84) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
